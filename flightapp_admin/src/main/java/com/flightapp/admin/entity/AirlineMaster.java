@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class AirlineMaster {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "airline_id")
 	private Integer airlineId;
 
