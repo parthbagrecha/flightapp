@@ -2008,3 +2008,237 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.egit.ui 4 0 2022-03-25 17:13:39.420
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.base/java.io.FileInputStream.read0(Native Method)
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:231)
+	at org.eclipse.jgit.util.IO.readWholeStream(IO.java:202)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:447)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.possiblyFilteredInputStream(WorkingTreeIterator.java:433)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getEntryContentLength(WorkingTreeIterator.java:636)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:233)
+	at org.eclipse.egit.ui.internal.staging.StagingView$52.run(StagingView.java:3404)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.007
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.007
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.010
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.012
+!MESSAGE buffering callback sts4.classpath.JcqOFQKa flightapp_admin false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.013
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.013
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.014
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.015
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.017
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.019
+!MESSAGE buffering callback sts4.classpath.HEFMPCyG flightapp_admin false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.020
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.020
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.022
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.024
+!MESSAGE buffering callback sts4.classpath.HEFMPCyG flightapp_admin false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.024
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.025
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.029
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.035
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.037
+!MESSAGE buffering callback sts4.classpath.JcqOFQKa flightapp_admin false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.037
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.037
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.040
+!MESSAGE classpath=96 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.042
+!MESSAGE buffering callback sts4.classpath.JcqOFQKa flightapp_admin false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.042
+!MESSAGE executing callback sts4.classpath.JcqOFQKa 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.042
+!MESSAGE executing callback sts4.classpath.JcqOFQKa FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-03-25 17:14:03.042
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.JcqOFQKa'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.045
+!MESSAGE buffering callback sts4.classpath.HEFMPCyG flightapp_admin false 96
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.045
+!MESSAGE executing callback sts4.classpath.HEFMPCyG 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:14:03.073
+!MESSAGE executing callback sts4.classpath.HEFMPCyG SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.289
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.289
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE buffering callback sts4.classpath.JcqOFQKa flightapp_admin false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE buffering callback sts4.classpath.JcqOFQKa flightapp_admin false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE buffering callback sts4.classpath.JcqOFQKa flightapp_admin false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE executing callback sts4.classpath.JcqOFQKa 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE executing callback sts4.classpath.JcqOFQKa FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2022-03-25 17:47:29.304
+!MESSAGE 
+!STACK 0
+java.lang.UnsupportedOperationException: No language server has registered to handle command 'sts4.classpath.JcqOFQKa'
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:42)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:197)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.304
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE buffering callback sts4.classpath.HEFMPCyG flightapp_admin false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE buffering callback sts4.classpath.HEFMPCyG flightapp_admin false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE Preparing classpath changed notification flightapp_admin
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE classpath=90 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE buffering callback sts4.classpath.HEFMPCyG flightapp_admin false 90
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.320
+!MESSAGE executing callback sts4.classpath.HEFMPCyG 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-25 17:47:29.429
+!MESSAGE executing callback sts4.classpath.HEFMPCyG SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-03-25 17:49:45.128
+!MESSAGE 
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1886)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2021)
+	at org.springframework.tooling.boot.ls.jdt.LSPTextHover.getHoverInfo(LSPTextHover.java:109)
+	at org.springframework.tooling.boot.ls.jdt.SpringBootJavaHoverProvider.getHoverInfo2(SpringBootJavaHoverProvider.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:167)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:133)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
+
+!ENTRY org.eclipse.jface 2 0 2022-03-25 17:51:43.181
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-25 17:51:43.181
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6255198b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@384d5c9c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
