@@ -1,0 +1,8 @@
+package com.flightapp.user.service;
+
+import com.flightapp.user.iservice.ITestService;
+
+@Service
+public class TestService implements ITestService {
+
+}

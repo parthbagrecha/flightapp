@@ -1,0 +1,7 @@
+package com.flightapp.admin.controller;
+
+@RestController
+@RequestMapping("/api/v1.0/flight/airline")
+public class AirlineController {
+
+}

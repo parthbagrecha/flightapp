@@ -1,0 +1,11 @@
+package com.flightapp.user.entity;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Test {
+	
+	@Id
+	private Integer testInt;
+
+}

@@ -1,0 +1,6 @@
+package com.flightapp.user.entity;
+
+@Entity
+public class Test {
+
+}
