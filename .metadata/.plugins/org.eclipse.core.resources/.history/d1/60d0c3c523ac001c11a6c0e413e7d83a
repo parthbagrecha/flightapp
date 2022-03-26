@@ -1,5 +1,0 @@
-package com.flightapp.user.service;
-
-public class TestService implements ITestService {
-
-}
