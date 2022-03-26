@@ -1,6 +1,7 @@
 package com.flightapp.admin.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,14 +19,25 @@ public class AirlineController {
 
 	@RequestMapping(value = "register", method = RequestMethod.POST)
 	public String registerAirline(@RequestBody AirlineMaster airlineMaster) {
-		Integer id = airlineService.registerAirline(airlineMaster);
-		return "Airline with id "+ id +" added";
+		try {
+			Integer id = airlineService.registerAirline(airlineMaster);
+			return "Airline with id " + id + " added";
+		} catch (Exception e) {
+			e.printStackTrace();
+			return e.getMessage();
+		}
 	}
 
-	@RequestMapping(value = "toggleBlock", method = RequestMethod.POST)
-	public String toggleBlock() {
-		airlineService.toggleBlock();
-		return null;
+	@RequestMapping(value = "/{status}/{airlineId}", method = RequestMethod.POST)
+	public String toggleBlock(@PathVariable("status") String status, @PathVariable("airlineId") Integer airlineId)
+			throws Exception {
+		try {
+			String result = airlineService.toggleBlock(status, airlineId);
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return e.getMessage();
+		}
 	}
 
 }

@@ -6,6 +6,6 @@ public interface IAirlineService {
 	
 	public Integer registerAirline(AirlineMaster airlineMaster);
 	
-	public String toggleBlock();
+	public String toggleBlock(String status, Integer airlineId) throws Exception;
 
 }

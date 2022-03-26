@@ -9,7 +9,7 @@ import com.flightapp.admin.repository.AirlineRepository;
 
 @Service
 public class AirlineService implements IAirlineService {
-	
+
 	@Autowired
 	AirlineRepository airlineRepository;
 
@@ -20,9 +20,23 @@ public class AirlineService implements IAirlineService {
 	}
 
 	@Override
-	public String toggleBlock() {
-		// TODO Auto-generated method stub
-		return null;
+	public String toggleBlock(String status, Integer airlineId) throws Exception {
+		if (airlineRepository.existsById(airlineId)) {
+			if (status.equalsIgnoreCase("block")) {
+				airlineRepository.updateAirlineMaster(airlineId, "Y");
+				return "Airline with the id " + airlineId + " has been blocked.";
+			}
+			else if (status.equalsIgnoreCase("unblock")) {
+				airlineRepository.updateAirlineMaster(airlineId, "N");
+				return "Airline with the id " + airlineId + " has been unblocked.";
+			}
+			else {
+				throw new Exception("Please check the request and try again");
+			}
+		}
+		else {
+			return "Airline with the id "+airlineId+" doesn't exist.";
+		}
 	}
 
 }

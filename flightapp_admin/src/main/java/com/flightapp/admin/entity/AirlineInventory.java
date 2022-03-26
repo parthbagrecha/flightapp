@@ -18,7 +18,7 @@ public class AirlineInventory {
 	private Integer inventoryId;
 
 	@Column(name = "airline_id")
-	private Integer airline_id;
+	private Integer airlined;
 
 	@Column(name = "airline_name")
 	private String airlineName;
@@ -36,7 +36,7 @@ public class AirlineInventory {
 	private LocalDateTime endDateTime;
 
 	@Column(name = "schedule_days")
-	private Integer scheduleDays;
+	private String scheduleDays;
 
 	@Column(name = "instrument")
 	private String instrument;
@@ -50,7 +50,7 @@ public class AirlineInventory {
 	@Column(name = "cost")
 	private Integer cost;
 
-	@Column(name = "rows")
+	@Column(name = "rows_of_seats")
 	private Integer rows;
 
 	@Column(name = "meal")
@@ -64,12 +64,12 @@ public class AirlineInventory {
 		this.inventoryId = inventoryId;
 	}
 
-	public Integer getAirline_id() {
-		return airline_id;
+	public Integer getAirlineId() {
+		return airlined;
 	}
 
-	public void setAirline_id(Integer airline_id) {
-		this.airline_id = airline_id;
+	public void setAirlineId(Integer airlined) {
+		this.airlined = airlined;
 	}
 
 	public String getAirlineName() {
@@ -112,11 +112,11 @@ public class AirlineInventory {
 		this.endDateTime = endDateTime;
 	}
 
-	public Integer getScheduleDays() {
+	public String getScheduleDays() {
 		return scheduleDays;
 	}
 
-	public void setScheduleDays(Integer scheduleDays) {
+	public void setScheduleDays(String scheduleDays) {
 		this.scheduleDays = scheduleDays;
 	}
 

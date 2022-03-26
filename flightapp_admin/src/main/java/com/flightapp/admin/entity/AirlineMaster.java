@@ -20,7 +20,7 @@ public class AirlineMaster {
 	private String airlineName;
 
 	@Column(name = "is_blocked")
-	private String isBlocked;
+	private String isBlocked = "N";
 
 	public Integer getAirlineId() {
 		return airlineId;
